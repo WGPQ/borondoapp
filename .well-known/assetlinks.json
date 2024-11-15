@@ -1,0 +1,9 @@
+[{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "com.example.city_stroll",
+    "sha256_cert_fingerprints":
+    ["C5:3B:AB:51:22:D2:7A:DC:9C:A8:BB:4D:40:D6:BD:EA:62:92:85:0B:6F:61:91:BB:63:55:5B:EB:5B:CE:DA:C5"]
+  }
+}]
