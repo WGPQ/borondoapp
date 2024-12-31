@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Redireccionando...</title>
 </head>
+
 <body>
     <div id="app">
         <p v-if="loading">Cargando información...</p>
@@ -21,6 +23,7 @@
                 };
             },
             mounted() {
+
                 // URL de tu API para obtener metadatos
                 const apiUrl = "https://jsonplaceholder.typicode.com/todos/4";
 
@@ -31,9 +34,9 @@
                         this.metadata = data;
                         this.updateMetadata(data);
                         this.loading = false;
-
+                        console.log(data);
                         // Redirigir después de un pequeño retraso
-                        
+
                     })
                     .catch(error => {
                         console.error("Error al obtener metadatos:", error);
@@ -71,4 +74,5 @@
         app.mount('#app');
     </script>
 </body>
+
 </html>
