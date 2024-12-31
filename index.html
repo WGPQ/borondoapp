@@ -34,7 +34,6 @@
                         this.metadata = data;
                         this.updateMetadata(data);
                         this.loading = false;
-                        console.log(data);
                         // Redirigir después de un pequeño retraso
 
                     })
@@ -47,6 +46,7 @@
                 updateMetadata(data) {
                     // Actualizar dinámicamente las etiquetas meta
                     const head = document.head;
+                    console.log("JAJAJAJAJ",data);
 
                     const ogTitle = document.createElement('meta');
                     ogTitle.setAttribute('property', 'og:title');
