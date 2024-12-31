@@ -46,9 +46,9 @@
                 updateMetadata(data) {
                     // Actualizar dinámicamente las etiquetas meta
                     const head = document.head;
-                    console.log("JAJAJAJAJ",data);
-
+                    
                     const ogTitle = document.createElement('meta');
+                    console.log("JAJAJAJAJ",data, ogTitle);
                     ogTitle.setAttribute('property', 'og:title');
                     ogTitle.setAttribute('content', data.title || 'Título por defecto');
                     head.appendChild(ogTitle);
